@@ -1,0 +1,8 @@
+.d-none {
+  display: none;
+}
+
+.products-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
