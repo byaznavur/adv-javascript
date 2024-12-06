@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#show img {
+  width: 450px;
+  height: 450px;
+  object-fit: cover;
+}
+
+.indicators {
+  display: flex;
+  justify-content: space-between;
+  background: red;
+  width: 450px;
+}
+
+.indicators img {
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
