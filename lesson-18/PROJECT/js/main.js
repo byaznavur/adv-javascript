@@ -20,11 +20,6 @@ navbarOpenBtn.addEventListener("click", function () {
     navbarResponsive.style.left = "-100%";
   }
 });
-
-// navbarCloseBtn.addEventListener("click", () => {
-//   navbarResponsive.style.left = "-100%";
-// });
-
 window.addEventListener("scroll", () => {
   if (scrollY > 100) {
     nav.classList.add("navbar-shrink");
@@ -32,7 +27,6 @@ window.addEventListener("scroll", () => {
     nav.classList.remove("navbar-shrink");
   }
 });
-
 navBtn.addEventListener("click", function () {
   if (document.body.classList.contains("dark")) {
     this.innerHTML = "Dark";
@@ -41,18 +35,11 @@ navBtn.addEventListener("click", function () {
   }
   document.body.classList.toggle("dark");
 });
-
 function modalOpen() {
   modal.classList.add("modal-show");
   modalBody.classList.add("modal-body-show");
 }
-
 modalOpenBtn.addEventListener("click", modalOpen);
-
-// modalCloseBtn.addEventListener("click", () => {
-//   modal.classList.remove("modal-show");
-//   modalBody.classList.remove("modal-body-show");
-// });
 
 function modalClose() {
   modal.classList.remove("modal-show");
